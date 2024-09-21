@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!-- Ajouter la balise ouvante <html> ensuite les balises ouvrantes et fermantes <head></head> -->
+
+<head>
+</head>
+
+<body>
+
+  <h1>Ada Tech School</h1>
+  <h2>Debug journey</h2>
+  <!-- Le h2 est fermé par une balise h3 -->
+  <p>What causes errors in HTML?
+  </p>
+  <!-- Il n'y a pas de balise </p> fermante -->
+  <ul>
+
+    <li>Unclosed elements: If an element is <strong> not closed properly,
+        then its effect can spread to areas you didn't intend.
+      </strong>
+    </li>
+    <!-- La balise </li> est manquante -->
+    <li>Badly nested elements: Nesting elements properly is also very important
+      for code behaving correctly. <strong>Strong</em>
+      <em>strong emphasised?</strong> what is this?
+      <!-- La balise ouvrante <em> fermait la balise ouvrante <strong> et la balise fermante </strong> ouvrait la balise <em>, il faut inverser les balises fermantes, placer </em> avant what -->
+    </li>
+    <!-- La balise </li> est manquante -->
+    <li>Unclosed attributes: Another common source of HTML problems. Let's
+      look at an example: <a href="https://www.mozilla.org/">link to Mozilla homepage</a></li>
+
+    <li>And in order to win some time, next time you can use this kind of tools:
+      <a href="https://validator.w3.org/">Markup Validation Service</a>
+    </li>
+    <!-- Ajouter <a href=" avant https..." et le signe supérieur après les guillemets, supprimer l'hashtag et les tirets du bas-->
+  </ul>
+</body>
+
+</html>
+<!-- Il manque la balise fermante </html> -->
